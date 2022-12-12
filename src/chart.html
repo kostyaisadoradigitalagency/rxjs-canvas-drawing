@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Chart</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<form class="col s12">
+			<h3 class="header">General params of Chart</h3>
+			<p>Default diameter 370px</p>
+			<div class="row">
+				<div class="input-field col s3">
+					<input id="line_width_general" type="number" value="1" class="validate" maxlength="2">
+					<label for="line_width_general">Line width</label>
+				</div>
+				<div class="input-field col s3">
+					<input id="color_general" type="color" value="#cccccc" class="validate">
+				</div>
+			</div>
+			<div class="variable-wrap" id="variable-wrap">
+				<h3 class="header">Part of Chart</h3>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<a id="add_variables" class="waves-effect waves-light btn-large">Add Variable</a>
+				</div>
+				<div class="col">
+					<a id="set_values" class="waves-effect waves-light btn-large">set Values</a>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="row">
+		<div class="col s6">
+			<svg viewBox="0 0 370 370" class="grow-progreses" width="370" height="370" id="chart">
+				<g id="group-lines"></g>
+			</svg>
+		</div>
+		<div class="col s6">
+			<div id="list" class="collection">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
